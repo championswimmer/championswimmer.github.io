@@ -213,7 +213,7 @@ ol {
 }
 
 ol, ul.square, ul.circle, ul.disc {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 ul.square {
@@ -241,7 +241,7 @@ ol ol li, ol ul li {
 
 li {
     line-height: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 ul.large li {

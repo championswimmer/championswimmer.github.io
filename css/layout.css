@@ -196,7 +196,7 @@ h4.grey-head span {
 }
 
 .fake-bg {
-    height: 65px;
+    height: 78px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -504,7 +504,7 @@ p.font36 {
     overflow: hidden;
 }
 
-.skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
+.skill1, .skill2, .skill3, .skill4, .skill5, .skill6, .skill7, .skill8, .skill9, .skill10 {
     height: 7px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -513,27 +513,43 @@ p.font36 {
 }
 
 .skill1 {
-    width: 95%;
+    width: 10%;
 }
 
 .skill2 {
-    width: 65%;
+    width: 20%;
 }
 
 .skill3 {
-    width: 45%;
+    width: 30%;
 }
 
 .skill4 {
-    width: 68%;
+    width: 40%;
 }
 
 .skill5 {
-    width: 80%;
+    width: 50%;
 }
 
 .skill6 {
-    width: 50%;
+    width: 60%;
+}
+
+.skill7{
+    width: 70%;
+}
+
+.skill8 {
+    width: 80%;
+}
+
+.skill9 {
+    width: 90%;
+}
+
+.skill10 {
+    width: 100%;
 }
 
 .exp-text {
