@@ -1,0 +1,57 @@
+a, a:visited { color: #fe5252; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #FFF; }
+
+#logo a img {
+	border:3px solid #fe5252;
+}
+.fake-bg{
+	background:url(../images/texture_bg.png) repeat scroll 0 0 #fe5252;
+}
+.etabs {
+	background:url(../images/texture_bg.png) repeat #fe5252;
+}
+.tab a.active span, .tab a:hover span{
+	background:#fe5252;
+}
+.tab a.active, .tab a:hover{
+	color:#fe5252;
+}
+.portfolio li h3 span {
+	color:#fe5252;
+}
+.intro-head p span{
+	color:#fe5252;
+}
+.panel-container {
+	border-left:2px solid #fe5252;
+}
+.home-contact p i{
+	color:#fe5252;
+}
+.skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
+	background: url(../images/texture_bg.png) repeat #fe5252;
+}
+.portfolio a:hover {
+	border:2px solid #fe5252;
+}
+form#contact_form input[type="submit"] {
+	background:url(../images/texture_bg.png) repeat #fe5252;
+}
+.contact-txt i{
+	color:#fe5252;
+}
+.tweet_list li {
+	background:url(../images/twitter_bird_pink.png) no-repeat 0 5px;
+}
+h3.org-head{
+	background:url(../images/texture_bg.png) repeat #fe5252;
+}
+h3.org-head span{
+	background:url(../images/down_arrow_pink.png) no-repeat 2px bottom;
+}
+.filter a {
+	color:#ffffff;
+}
+.filter a:hover, .current a {
+	color: #fe5252;
+}
