@@ -1,5 +1,5 @@
 a, a:visited {
-    color: #5588aa;
+    color: #6699bb;
     text-decoration: none;
     outline: 0;
 }
@@ -9,55 +9,55 @@ a:hover, a:focus {
 }
 
 #logo a img {
-    border: 3px solid #5588aa;
+    border: 3px solid #6699bb;
 }
 
 .fake-bg {
-    background: url(../images/texture_bg.png) repeat scroll 0 0 #5588aa;
+    background: url(../images/texture_bg.png) repeat scroll 0 0 #6699bb;
 }
 
 .etabs {
-    background: url(../images/texture_bg.png) repeat #5588aa;
+    background: url(../images/texture_bg.png) repeat #6699bb;
 }
 
 .tab a.active span, .tab a:hover span {
-    background: #5588aa;
+    background: #6699bb;
 }
 
 .tab a.active, .tab a:hover {
-    color: #5588aa;
+    color: #6699bb;
 }
 
 .portfolio li h3 span {
-    color: #5588aa;
+    color: #6699bb;
 }
 
 .intro-head p span {
-    color: #5588aa;
+    color: #6699bb;
 }
 
 .panel-container {
-    border-left: 2px solid #5588aa;
+    border-left: 2px solid #6699bb;
 }
 
 .home-contact p i {
-    color: #5588aa;
+    color: #6699bb;
 }
 
 .skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
-    background: url(../images/texture_bg.png) repeat #5588aa;
+    background: url(../images/texture_bg.png) repeat #6699bb;
 }
 
 .portfolio a:hover {
-    border: 2px solid #5588aa;
+    border: 2px solid #6699bb;
 }
 
 form#contact_form input[type="submit"] {
-    background: url(../images/texture_bg.png) repeat #5588aa;
+    background: url(../images/texture_bg.png) repeat #6699bb;
 }
 
 .contact-txt i {
-    color: #5588aa;
+    color: #6699bb;
 }
 
 .tweet_list li {
@@ -65,7 +65,7 @@ form#contact_form input[type="submit"] {
 }
 
 h3.org-head {
-    background: url(../images/texture_bg.png) repeat #5588aa;
+    background: url(../images/texture_bg.png) repeat #6699bb;
 }
 
 h3.org-head span {
@@ -77,5 +77,5 @@ h3.org-head span {
 }
 
 .filter a:hover, .current a {
-    color: #5588aa;
+    color: #6699bb;
 }
