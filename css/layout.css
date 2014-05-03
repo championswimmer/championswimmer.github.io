@@ -250,17 +250,18 @@ span.icon-wrap {
     -o-border-radius: 1000px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     background: #333;
-    height: 27px;
-    width: 27px !important;
+    height: 40px;
+    width: 40px ;
     display: block !important;
     margin: 0 auto 5px auto;
 }
 
 span.icon-wrap i {
-    position: relative;
-    top: 3px;
     text-shadow: none;
-    font-size: 14px;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    align-items: center;
 }
 
 .tabs li.active a span.icon-wrap {
@@ -270,8 +271,8 @@ span.icon-wrap i {
     -o-border-radius: 1000px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
     background: #f35f2a;
-    height: 27px;
-    width: 27px !important;
+    height: 40px;
+    width: 40px;
     display: block;
     margin-right: 8px;
     float: left;
@@ -346,7 +347,7 @@ h1, h2, h3, h4, h5, h6, .tab a, blockquote {
 }
 
 .social-icons ul li {
-    font-size: 20px;
+    font-size: 24px;
     display: inline-block;
     margin: 0;
 }
