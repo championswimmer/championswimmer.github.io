@@ -1,57 +1,81 @@
-a, a:visited { color: #1bc2dd; text-decoration: none; outline: 0; }
-a:hover, a:focus { color: #FFF; }
+a, a:visited {
+    color: #1bc2dd;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover, a:focus {
+    color: #FFF;
+}
 
 #logo a img {
-	border:3px solid #1bc2dd;
+    border: 3px solid #1bc2dd;
 }
-.fake-bg{
-	background:url(../images/texture_bg.png) repeat scroll 0 0 #1bc2dd;
+
+.fake-bg {
+    background: url(../images/texture_bg.png) repeat scroll 0 0 #1bc2dd;
 }
+
 .etabs {
-	background:url(../images/texture_bg.png) repeat #1bc2dd;
+    background: url(../images/texture_bg.png) repeat #1bc2dd;
 }
-.tab a.active span, .tab a:hover span{
-	background:#1bc2dd;
+
+.tab a.active span, .tab a:hover span {
+    background: #1bc2dd;
 }
-.tab a.active, .tab a:hover{
-	color:#1bc2dd;
+
+.tab a.active, .tab a:hover {
+    color: #1bc2dd;
 }
+
 .portfolio li h3 span {
-	color:#1bc2dd;
+    color: #1bc2dd;
 }
-.intro-head p span{
-	color:#1bc2dd;
+
+.intro-head p span {
+    color: #1bc2dd;
 }
+
 .panel-container {
-	border-left:2px solid #1bc2dd;
+    border-left: 2px solid #1bc2dd;
 }
-.home-contact p i{
-	color:#1bc2dd;
+
+.home-contact p i {
+    color: #1bc2dd;
 }
+
 .skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
-	background: url(../images/texture_bg.png) repeat #1bc2dd;
+    background: url(../images/texture_bg.png) repeat #1bc2dd;
 }
+
 .portfolio a:hover {
-	border:2px solid #1bc2dd;
+    border: 2px solid #1bc2dd;
 }
+
 form#contact_form input[type="submit"] {
-	background:url(../images/texture_bg.png) repeat #1bc2dd;
+    background: url(../images/texture_bg.png) repeat #1bc2dd;
 }
-.contact-txt i{
-	color:#1bc2dd;
+
+.contact-txt i {
+    color: #1bc2dd;
 }
+
 .tweet_list li {
-	background:url(../images/twitter_bird_blue.png) no-repeat 0 5px;
+    background: url(../images/twitter_bird_blue.png) no-repeat 0 5px;
 }
-h3.org-head{
-	background:url(../images/texture_bg.png) repeat #1bc2dd;
+
+h3.org-head {
+    background: url(../images/texture_bg.png) repeat #1bc2dd;
 }
-h3.org-head span{
-	background:url(../images/down_arrow_blue.png) no-repeat 2px bottom;
+
+h3.org-head span {
+    background: url(../images/down_arrow_blue.png) no-repeat 2px bottom;
 }
+
 .filter a {
-	color:#ffffff;
+    color: #ffffff;
 }
+
 .filter a:hover, .current a {
-	color: #1bc2dd;
+    color: #1bc2dd;
 }
