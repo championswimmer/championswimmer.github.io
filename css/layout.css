@@ -172,12 +172,15 @@ h3.org-head {
     display: inline-block;
     padding: 5px 8px;
     color: #FFF;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
+
 }
 
 h3.org-head span {
     padding: 0 0 12px 0;
+    font-weight: 800;
+    text-shadow: 2px 2px 1px #555
 }
 
 h4.grey-head {
@@ -467,8 +470,30 @@ p.font36 {
     border-radius: 100%;
 }
 
-.home-contact p a {
+.home-contact p {
     color: #FFF;
+    font-weight: 400;
+}
+
+.home-contact a p {
+    color: #FFF;
+    font-weight: 400;
+}
+
+
+.home-contact a p span {
+    font-weight: 600;
+
+}
+
+.home-contact p span {
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #ddd
+
+}
+
+.home-contact p i {
+    color: #6699bb;
 }
 
 .home-contact p a:hover {
