@@ -480,7 +480,6 @@ p.font36 {
     font-weight: 400;
 }
 
-
 .home-contact a p span {
     font-weight: 600;
 
@@ -557,7 +556,7 @@ p.font36 {
     width: 60%;
 }
 
-.skill7{
+.skill7 {
     width: 70%;
 }
 
@@ -934,15 +933,15 @@ h4.form_thanks {
 }
 
 .blog-feed .rss-title {
-    padding:5px;
+    padding: 5px;
     letter-spacing: 4px;
     font-weight: 800;
     font-size: 22px;
 }
 
 .blog-feed .rss-title span {
-    margin:5px;
-    padding:5px;
+    margin: 5px;
+    padding: 5px;
     letter-spacing: 2px;
     font-size: 16px;
     font-weight: 500;
@@ -1053,7 +1052,6 @@ footer {
         width: 244px;
     }
 
-
     .portfolio li:nth-child(3n) {
         margin-right: 0;
     }
@@ -1127,7 +1125,6 @@ footer {
     /* ========= end =========== */
 
 }
-
 
 @media only screen and (min-width: 239px) and (max-width: 479px) {
     /*
