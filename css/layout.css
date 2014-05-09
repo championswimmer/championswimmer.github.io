@@ -932,20 +932,30 @@ h4.form_thanks {
     line-height: 22px;
 }
 
+.blog-feed p {
+
+}
+
 .blog-feed .rss-title {
-    padding: 5px;
     letter-spacing: 4px;
     font-weight: 800;
     font-size: 22px;
 }
 
 .blog-feed .rss-title span {
-    margin: 5px;
-    padding: 5px;
     letter-spacing: 2px;
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
+}
+
+.blog-feed ul li {
+    padding: 15px;
+    border-left: groove #aaaaaa;
+    border-top: groove #aaaaaa;
+    border-radius: 0px 20px 80px 20px;
+    background: #222222 ;
+
 }
 
 .blog-feed a.rss-item {
