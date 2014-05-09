@@ -919,6 +919,48 @@ h4.form_thanks {
 =============================================================================
 */
 
+.blog-feed ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: normal;
+    font-size: larger;
+    font-weight: 300;
+}
+
+.blog-feed ul li br {
+    line-height: 22px;
+}
+
+.blog-feed .rss-title {
+    padding:5px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.blog-feed .rss-title span {
+    margin:5px;
+    padding:5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.blog-feed a.rss-item {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.blog-feed .rss-date {
+    float: right;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
 
 /* ========= end =========== */
 
@@ -1011,17 +1053,6 @@ footer {
         width: 244px;
     }
 
-    .download-card a {
-        padding: 8px 15px 8px 35px;
-        font-size: 11px;
-        background: #F90 url(../images/vcard_btn.png) no-repeat 12px 9px;
-    }
-
-    .download-card a:hover {
-        color: #FFF;
-        background: #2C77A1 url(../images/vcard_btn.png) no-repeat 12px 9px;
-        text-shadow: 0 1px 0 #439dcf;
-    }
 
     .portfolio li:nth-child(3n) {
         margin-right: 0;
@@ -1097,7 +1128,7 @@ footer {
 
 }
 
-}
+
 @media only screen and (min-width: 239px) and (max-width: 479px) {
     /*
     =============================================================================
