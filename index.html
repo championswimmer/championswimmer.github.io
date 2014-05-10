@@ -425,7 +425,8 @@
                 <div class="blog-feed">
 
                     <div class="todo hidden"
-                         onclick="$(this).toggleClass('hidden'); $('.blogspot').addClass('hidden')" >
+                         onmouseover="$('.blogspot').addClass('hidden'); $(this).removeClass('hidden'); "
+                         onclick="$('.blogspot').addClass('hidden'); $(this).toggleClass('hidden'); " >
                         <!-- onmouseover="if($(this).hasClass('hidden')){$(this).removeClass('hidden')}; $('.blogspot').addClass('hidden')" -->
                     <script language="JavaScript"
                             src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fblog.championswimmer.in%2Fwp-rss.php&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y"
@@ -440,7 +441,8 @@
                     <br><br><br>
 
                     <div class="blogspot hidden"
-                         onclick="$(this).toggleClass('hidden'); $('.todo').addClass('hidden')">
+                         onmouseover="$('.todo').addClass('hidden'); $(this).removeClass('hidden'); "
+                         onclick="$('.todo').addClass('hidden'); $(this).toggleClass('hidden'); ">
 
                     <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fchampsviews.blogspot.in%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y"  charset="UTF-8" type="text/javascript"></script>
 
