@@ -466,9 +466,6 @@
                 <ul id="github-stream" class="github-stream"></ul>
                 <script type="text/javascript" language="JavaScript">
                     $.getJSON("https://github.com/championswimmer.json?callback=?", function (json) {
-                        callback(json);
-                    });
-                    function callback(data) {
                         var transform = [
                             {"tag":"li","class":"${type}","children":[
                                 {"tag":"div","class":"event","children":[
@@ -476,7 +473,7 @@
                                         {"tag":"a","href":"${url}","html":"${type}"}
                                     ]},
                                     {"tag":"div","class":"event-desc","children":[
-                                        {"tag":"span","html":" on "},
+                                        {"tag":"span","html":" at "},
                                         {"tag":"a","href":"${repository.url}","html":"${repository.name}"},
                                         {"tag":"span","class":"created-at","html":" ${created_at} "},
 
@@ -484,8 +481,10 @@
                                 ]}
                             ]}
                         ];
-                        $('#github-stream').json2html(data, transform, 6);
-                    }
+                        $('#github-stream').empty();
+                        $('#github-stream').json2html(json, transform, 8);
+                    });
+
 
 
                 </script>
