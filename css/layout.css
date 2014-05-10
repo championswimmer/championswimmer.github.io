@@ -984,6 +984,26 @@ h4.form_thanks {
     transition-timing-function: ease-out;
 }
 
+.hidden .rss-title a:after {
+    display: block;
+    margin: 3px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: x-large;
+    content: "\f13a";
+    float: right;
+}
+
+.rss-title a:after {
+    display: block;
+    margin: 3px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: x-large;
+    content: "\f139";
+    float: right;
+}
+
 .blog-feed a.rss-item {
     font-size: 20px;
     font-weight: 800;
