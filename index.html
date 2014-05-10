@@ -49,6 +49,8 @@
     <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
     <script type="text/javascript" src="js/jquery.quicksand.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/json2html.js"></script>
+    <script type="text/javascript" src="js/jquery.json2html.js"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
@@ -463,8 +465,27 @@
         <div class="columns four">
             <div class="content-pad">
                 <h3><span>Github Activity</span></h3>
+                <ul id="github-stream"></ul>
+                <script type="text/javascript" language="JavaScript">
+                    $.getJSON("https://github.com/championswimmer.json?callback=?", function(json){ callback (json);} );
+                    function callback (data) {
+                        var transform = [
+                            {"tag":"li","class":"${type}","children":[
+                                {"tag":"a","href":"${url}","html":"${type}"},
+                                {"tag":"span","html":" on "},
+                                {"tag":"a","href":"${repository.url}","html":"${repository.name}"},
+                                {"tag":"a","children":[
+                                    {"tag":"br","html":""},
+                                    {"tag":"span","html":" ${created_at} "},
+                                    {"tag":"br","html":""}
+                                ]}
+                            ]}
+                        ];
+                        $('#github-stream').json2html(data, transform, 6);
+                    }
 
-                whoops !!! this is under construction
+
+                </script>
 
             </div>
         </div>
