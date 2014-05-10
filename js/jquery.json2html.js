@@ -10,65 +10,65 @@
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-(function($){	
+(function ($) {
 
-	//Main method
-	$.fn.json2html = function(json, transform, max, _options){
-		
-		//Make sure we have the json2html base loaded
-		if(typeof json2html === 'undefined') return(undefined);
+    //Main method
+    $.fn.json2html = function (json, transform, max, _options) {
 
-		//Default Options
-		var options = {
-			'append':true,
-			'replace':false,
-			'prepend':false,
-			'eventData':{}
-		};
+        //Make sure we have the json2html base loaded
+        if (typeof json2html === 'undefined') return(undefined);
 
-		//Extend the options (with defaults)
-		if( _options !== undefined ) $.extend(options, _options);
+        //Default Options
+        var options = {
+            'append': true,
+            'replace': false,
+            'prepend': false,
+            'eventData': {}
+        };
 
-		//Insure that we have the events turned (Required)
-		options.events = true;
-		
-		//Make sure to take care of any chaining
-		return this.each(function(){ 
-			
-			//let json2html core do it's magic
-			var result = json2html.transform(json, transform, max, options);
-			
-			//Attach the html(string) result to the DOM
-			var dom = $(document.createElement('i')).html(result.html);
+        //Extend the options (with defaults)
+        if (_options !== undefined) $.extend(options, _options);
 
-			//Determine if we have events
-			for(var i = 0; i < result.events.length; i++) {
-				
-				var event = result.events[i];
+        //Insure that we have the events turned (Required)
+        options.events = true;
 
-				//find the associated DOM object with this event
-				var obj = $(dom).find("[json2html-event-id-"+event.type+"='" + event.id + "']");
+        //Make sure to take care of any chaining
+        return this.each(function () {
 
-				//Check to see if we found this element or not
-				if(obj.length === 0) throw 'jquery.json2html was unable to attach event ' + event.id + ' to DOM';
-				
-				//remove the attribute
-				$(obj).removeAttr('json2html-event-id-'+event.type);
+            //let json2html core do it's magic
+            var result = json2html.transform(json, transform, max, options);
 
-				//attach the event
-				$(obj).on(event.type,event.data,function(e){
-					//attach the jquery event
-					e.data.event = e;
+            //Attach the html(string) result to the DOM
+            var dom = $(document.createElement('i')).html(result.html);
 
-					//call the appropriate method
-					e.data.action.call($(this),e.data);
-				});
-			}
+            //Determine if we have events
+            for (var i = 0; i < result.events.length; i++) {
 
-			//Append it to the appropriate element
-			if (options.replace) $.fn.replaceWith.call($(this),$(dom).children());
-			else if (options.prepend) $.fn.prepend.call($(this),$(dom).children());
-			else $.fn.append.call($(this),$(dom).children());
-		});
-	};
+                var event = result.events[i];
+
+                //find the associated DOM object with this event
+                var obj = $(dom).find("[json2html-event-id-" + event.type + "='" + event.id + "']");
+
+                //Check to see if we found this element or not
+                if (obj.length === 0) throw 'jquery.json2html was unable to attach event ' + event.id + ' to DOM';
+
+                //remove the attribute
+                $(obj).removeAttr('json2html-event-id-' + event.type);
+
+                //attach the event
+                $(obj).on(event.type, event.data, function (e) {
+                    //attach the jquery event
+                    e.data.event = e;
+
+                    //call the appropriate method
+                    e.data.action.call($(this), e.data);
+                });
+            }
+
+            //Append it to the appropriate element
+            if (options.replace) $.fn.replaceWith.call($(this), $(dom).children());
+            else if (options.prepend) $.fn.prepend.call($(this), $(dom).children());
+            else $.fn.append.call($(this), $(dom).children());
+        });
+    };
 })(jQuery);

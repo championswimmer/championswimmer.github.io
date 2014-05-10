@@ -423,21 +423,20 @@
             <div class="content-pad">
 
 
-
                 <div class="blog-feed">
 
                     <div class="todo hidden"
                          onmouseover="$('.blogspot').addClass('hidden'); $(this).removeClass('hidden'); "
-                         onclick="$('.blogspot').addClass('hidden'); $(this).toggleClass('hidden'); " >
+                         onclick="$('.blogspot').addClass('hidden'); $(this).toggleClass('hidden'); ">
                         <!-- onmouseover="if($(this).hasClass('hidden')){$(this).removeClass('hidden')}; $('.blogspot').addClass('hidden')" -->
-                    <script language="JavaScript"
-                            src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fblog.championswimmer.in%2Fwp-rss.php&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y"
-                            charset="UTF-8" type="text/javascript"></script>
+                        <script language="JavaScript"
+                                src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fblog.championswimmer.in%2Fwp-rss.php&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y"
+                                charset="UTF-8" type="text/javascript"></script>
 
-                    <noscript>
-                        <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fblog.championswimmer.in%2Fwp-rss.php&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y&html=y">View
-                            RSS feed</a>
-                    </noscript>
+                        <noscript>
+                            <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fblog.championswimmer.in%2Fwp-rss.php&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y&html=y">View
+                                RSS feed</a>
+                        </noscript>
                     </div>
 
                     <br><br><br>
@@ -446,16 +445,15 @@
                          onmouseover="$('.todo').addClass('hidden'); $(this).removeClass('hidden'); "
                          onclick="$('.todo').addClass('hidden'); $(this).toggleClass('hidden'); ">
 
-                    <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fchampsviews.blogspot.in%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y"  charset="UTF-8" type="text/javascript"></script>
+                        <script language="JavaScript"
+                                src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fchampsviews.blogspot.in%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y"
+                                charset="UTF-8" type="text/javascript"></script>
 
-                    <noscript>
-                        <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fchampsviews.blogspot.in%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y&html=y">View RSS feed</a>
-                    </noscript>
+                        <noscript>
+                            <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fchampsviews.blogspot.in%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss&chan=y&num=4&desc=200&date=y&tz=+5.5&targ=blog&utf=y&html=y">View
+                                RSS feed</a>
+                        </noscript>
                     </div>
-
-
-
-
 
 
                 </div>
@@ -467,17 +465,19 @@
                 <h3><span>Github Activity</span></h3>
                 <ul id="github-stream"></ul>
                 <script type="text/javascript" language="JavaScript">
-                    $.getJSON("https://github.com/championswimmer.json?callback=?", function(json){ callback (json);} );
-                    function callback (data) {
+                    $.getJSON("https://github.com/championswimmer.json?callback=?", function (json) {
+                        callback(json);
+                    });
+                    function callback(data) {
                         var transform = [
-                            {"tag":"li","class":"${type}","children":[
-                                {"tag":"a","href":"${url}","html":"${type}"},
-                                {"tag":"span","html":" on "},
-                                {"tag":"a","href":"${repository.url}","html":"${repository.name}"},
-                                {"tag":"a","children":[
-                                    {"tag":"br","html":""},
-                                    {"tag":"span","html":" ${created_at} "},
-                                    {"tag":"br","html":""}
+                            {"tag": "li", "class": "${type}", "children": [
+                                {"tag": "a", "href": "${url}", "html": "${type}"},
+                                {"tag": "span", "html": " on "},
+                                {"tag": "a", "href": "${repository.url}", "html": "${repository.name}"},
+                                {"tag": "a", "children": [
+                                    {"tag": "br", "html": ""},
+                                    {"tag": "span", "html": " ${created_at} "},
+                                    {"tag": "br", "html": ""}
                                 ]}
                             ]}
                         ];
