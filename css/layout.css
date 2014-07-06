@@ -1019,37 +1019,52 @@ h4.form_thanks {
 
 .github-stream .event {
     overflow: hidden;
-    background: url('../images/texture_bg.png') repeat scroll #222222;
+    /*background: url('../images/texture_bg.png') repeat scroll #313131;*/
+    background-color: #313131;
     margin: 5px 5px 10px 5px;
     padding: 8px 5px 12px 8px;
     border-radius: 5px 20px 5px 10px;
-    border-style: dotted;
-    border-width: thick;
-    border-color: #101010 #353535 #585858 #797979;
-}
-.github-stream .event-desc {
-    position: relative;
-    left: -100%;
-    visibility: hidden;
-    transition-duration: 1.5s;
-    transition-timing-function: ease-out;
+    border-style: solid;
+    border-width: medium;
+    border-color: #101010 #212121 #585858 #797979;
 }
 
 .github-stream .event-type {
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 2px;
     display: block;
 }
 
-.event-desc .created-at {
-    display: block;
+.github-stream .event-desc {
+    font-weight: 300;
+    position: relative;
+    font-style: italic;
+    /*left: -100%;
+    visibility: hidden;
+    transition-duration: 0.75s;
+    transition-timing-function: ease-out;*/
 }
 
-.github-stream .event:hover > .event-desc {
+.github-stream .event-desc span {
+    font-weight: 200;
+}
+
+.github-stream .event-desc .created-at {
+    font-size: smaller;
+    display: block;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+
+/*.github-stream .event:hover > .event-desc {
     position: relative;
     left:0;
     visibility: visible;
-    transition-duration: 1.5s;
+    transition-duration: 0.75s;
     transition-timing-function: ease-out;
-}
+}*/
 
 
 /* ========= end =========== */
