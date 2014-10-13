@@ -423,6 +423,7 @@ fieldset {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"],
 input[type="email"],
 textarea,
@@ -448,6 +449,7 @@ select {
 }
 
 input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
