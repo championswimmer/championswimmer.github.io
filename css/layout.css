@@ -786,7 +786,7 @@ dt {
 form#contact_form {
 }
 
-form#contact_form input[type="text"], form#contact_form textarea {
+form#contact_form input[type="text"], form#contact_form input[type="email"], form#contact_form textarea {
     color: #333333;
     padding: 0 10px;
     font-family: 'Dosis', sans-serif;
@@ -800,6 +800,10 @@ form#contact_form input[type="text"], form#contact_form textarea {
 }
 
 form#contact_form input[type="text"] {
+    width: 97%;
+}
+
+form#contact_form input[type="email"] {
     width: 97%;
 }
 
