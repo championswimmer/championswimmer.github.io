@@ -557,9 +557,14 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="form-row">
-                            <input type="submit" class="btn" value="Submit"/>
+                            <input type="button" onclick="submitContact()" class="btn" value="Submit"/>
                         </div>
                     </form>
+                    <script>
+                        function submitContact() {
+                        document.getElementById("contact_form").submit();
+                        }
+                    </script>
                 </div>
             </div>
         </div>
