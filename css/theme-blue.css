@@ -56,6 +56,10 @@ form#contact_form input[type="submit"] {
     background: url(../images/texture_bg.png) repeat #6699bb;
 }
 
+form#contact_form input[type="button"] {
+    background: url(../images/texture_bg.png) repeat #6699bb;
+}
+
 .contact-txt i {
     color: #6699bb;
 }
