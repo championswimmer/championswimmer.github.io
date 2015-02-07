@@ -502,7 +502,7 @@
                 <h3><span>Github Activity</span></h3>
                 <ul id="github-stream" class="github-stream"></ul>
                 <script type="text/javascript" language="JavaScript">
-                    $.getJSON("https://github.com/championswimmer.json?callback=?", function (json) {
+                    $.getJSON("https://api.github.com/users/championswimmer/events", function (json) {
                         var transform = [
                             {"tag":"li","class":"${type}","children":[
                                 {"tag":"div","class":"event","children":[
@@ -511,7 +511,7 @@
                                     ]},
                                     {"tag":"div","class":"event-desc","children":[
                                         {"tag":"span","html":" at "},
-                                        {"tag":"a","href":"${repository.url}","html":"${repository.name}"},
+                                        {"tag":"a","href":"${repo.url}","html":"${repo.name}"},
                                         {"tag":"span","class":"created-at","html":" ${created_at} "},
 
                                     ]}
