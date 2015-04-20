@@ -120,10 +120,17 @@
         </div>
 
         <h3 class="org-head">what I <span>tweet</span></h3>
-
-        <br><br>whoops !! this is under construction
-
-        <div class='tweet query'></div>
+        <div class='tweet query'>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                $('.twitterfeed').tweet({
+                modpath: '/assets/twitter/',
+                count: 5,
+                loading_text: 'loading twitter feed...',
+        /* etc... */
+    });
+</script>
+        </div>
     </div>
 </div>
 <div class="columns twelve">
